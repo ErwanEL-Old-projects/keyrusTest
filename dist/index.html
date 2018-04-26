@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Keyrus test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- googleFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans|Encode+Sans+Expanded|Encode+Sans+Semi+Condensed|Kite+One|Laila|Libre+Barcode+39+Text|Mandali|Nova+Mono|Pavanam|Stint+Ultra+Expanded"
+        rel="stylesheet">
+
+    <!-- fontAwesome -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+</head>
+
+<body id="body">
+    <div id="notification" class="mx-auto alert alert-success" role="alert">
+        <button style="pointer-events: none;" type="button"  class="float-left close" aria-label="Close">
+            <span id="check" aria-hidden="true">&check;</span>
+        </button>
+        <p id="notificationText" style="text-align: -webkit-right;"></p>
+    </div>
+
+    <div class="vertical-center">
+        <div class="card mx-auto text-center" style="width: 30rem;">
+            <div class="card-body">
+                <form role="form">
+                    <p class="font-weight-bold text-secondary" style="font-size:20px;">Entrar na minha conta</p>
+                    <div class="form-group">
+                        <div style="width:50%;" class="input-group mx-auto">
+                            <input id="emailInput" class="form-control py-2 border-right-0 border bg-light" placeholder="Email" type="text">
+                            <span class="input-group-append bg-light">
+                                <div class="input-group-text bg-transparent border border-left-0">
+                                    <i style="opacity:0.2;"  class="fas fa-user"></i>
+                                </div>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- /.form-group -->
+
+                    <div class="form-group">
+                        <div style="width:50%;" class="input-group mx-auto">
+                            <input id="senhaInput" class="form-control py-2 border-right-0 border bg-light" placeholder="Senha" type="password">
+                            <span class="input-group-append bg-light">
+                                <div class="input-group-text bg-transparent border border-left-0">
+                                    <i style="opacity:0.2;" class="fas fa-lock"></i>
+                                </div>
+                            </span>
+                        </div>
+                        <!-- /.input-group -->
+                    </div>
+                    <!-- /.form-group -->
+                    <button id="entrarButton" style="width:120px;" type="button" class="btn btn-primary btn-lg">Entrar</button>
+                    <div class="checkbox">
+                        <label class="mt-3 ml-5 pl-4">
+                            <input type="checkbox"> Mantenha-me conectado
+                        </label>
+                    </div>
+                    <!-- /.checkbox -->
+                </form>
+            </div>
+        </div>
+    </div>
+    <p id="inscreverSe" class="text-center ">Precisa de uma conta?
+        <a href="#">Inscreve-se</a>
+    </p>
+    <p id="esqueceu" class="text-center">Esqueceu sua senha?
+        <a href="#">Clique aqui.</a>
+    </p>
+
+    <div style="width:50%;" class="input-group mb-3 mx-auto mt-5">
+        <div class="input-group-prepend">
+            <div id="info-logo">
+                <i class="fas fa-info mx-auto d-inline"></i>
+            </div>
+        </div>
+        <input style="pointer-events: none;" class="form-control text-center font-italic bg-white" type="text" placeholder="Keyrus" readonly>
+    </div>
+
+
+    <!-- customJs -->
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>

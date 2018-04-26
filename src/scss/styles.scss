@@ -1,0 +1,67 @@
+@import "C:/Users/leblo/AppData/Roaming/npm/node_modules/bootstrap/scss/_functions";
+@import "C:/Users/leblo/AppData/Roaming/npm/node_modules/bootstrap/scss/_variables";
+//Pour utiliser le bootstrap en module local
+// @import "../../node_modules/bootstrap/scss/_functions";
+// @import "../../node_modules/bootstrap/scss/_variables";
+/********************************************************************                                VARIABLES ********************************************************************/
+// Variable Overrides 
+$theme-colors: (
+    "primary":    $primary,
+    "secondary":  $secondary,
+    "success":    $success,
+    "info":       $info,
+    "warning":    $warning,
+    "danger":     $danger,
+    "light":      $light,
+    "dark":       $dark
+);
+
+$customGrey : #616161;
+
+$body-bg: $light;
+
+/********************************************************************
+                                STYLES
+********************************************************************/
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+#body .card {
+    border-radius: 10px;
+    box-shadow: 0 0 3px rgb(156, 156, 156);
+}
+
+#notification {
+    display: none;
+    max-width:700px;
+    border-radius: 10px;
+}
+
+#info-logo {
+    text-align: center;
+    width: 30px;
+    padding-top: 5px;
+    background: $customGrey;
+    color: white;
+    margin-right: 5px;
+}
+
+#inscreverSe {
+    text-decoration-line: underline;
+    font-weight: bold;
+    color: $customGrey;
+}
+
+#esqueceu {
+    color: $customGrey;    
+}
+
+// Bootstrap Sass Imports
+@import"C:/Users/leblo/AppData/Roaming/npm/node_modules/bootstrap/scss/bootstrap";
+//Pour utiliser le bootstrap en module local
+// @import"../../node_modules/bootstrap/scss/bootstrap";
